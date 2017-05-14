@@ -6,6 +6,7 @@ import App from './App';
 
 Vue.config.productionTip = false;
 Vue.use(VueResource);
+Vue.http.options.root = 'https://vuejs-http-5e6b6.firebaseio.com/data.json';
 
 /* eslint-disable no-new */
 new Vue({

@@ -38,7 +38,7 @@ export default {
   methods: {
     submit() {
       console.log(this.user);
-      this.$http.post('https://vuejs-http-5e6b6.firebaseio.com/data.json', this.user)
+      this.$http.post('', this.user)
         .then((response) => {
           console.log(response);
         }, (error) => {
@@ -46,7 +46,7 @@ export default {
         });
     },
     fetchData() {
-      this.$http.get('https://vuejs-http-5e6b6.firebaseio.com/data.json', this.user)
+      this.$http.get('', this.user)
         .then((response) => {
           return response.json();
         }, (error) => {
